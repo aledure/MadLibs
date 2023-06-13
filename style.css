@@ -1,88 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Comfortaa:wght@300;400;500;600;700&family=Fraunces&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: "Unbounded", cursive;
+    font-family: "Comfortaa", cursive;
 }
-
 body {
-    background-color: #edf2f4;
+    background-color: #abd1c6;
     color: #2b2d42;
 }
-
+hr {
+    background-color: #f9bc60;
+    height: 0.1em;
+    border: none;
+    margin-top: 1em;
+}
 h1 {
     font-size: 4rem;
+    margin: 0.5em 0 1em 0;
 }
-
 h2 {
     font-size: 3rem;
 }
-
 h3 {
     font-size: 1.5rem;
 }
-
 p {
     font-size: 1rem;
     font-weight: 300;
 }
-
 .container {
-    background-color: #8d99ae;
+    background-color: #004643;
     color: #edf2f4;
     padding: 2em;
     border-radius: 2em;
-    width: 85%;
+    width: 75%;
     margin: 0 auto;
 }
-
 .submit {
     border: none;
-    background-color: #ef233c;
+    background-color: #e16162;
     padding: 0.5em;
     border-radius: 1em;
     margin-top: 1em;
+    width: 50%;
+    align-self: center;
     transition: 0.4s ease;
 }
-
 .submit:hover {
-    background-color: #d80032;
+    background-color: #9c4242;
     color: #edf2f4;
     transform: scale(1.1);
     transition: 0.4s ease;
 }
-
 form {
     margin: 2em auto;
     width: 20em;
+    display: flex;
+    flex-direction: column;
 }
-
 .form-group {
     display: flex;
     justify-content: space-between;
-    color: #2b2d42;
+    color: #e8e4e6;
     font-size: large;
     margin-bottom: 1.5em;
     outline: none;
 }
-
 input {
     border: none;
     border-bottom: 2px solid #2b2d42;
     background-color: #edf2f4;
     height: 2em;
+    padding-left: 0.5em;
 }
-
 input:focus {
     transform: scale(1.1);
 }
-
 .mad-lib {
     width: 20em;
     margin: 2em auto;
 }
-
 b {
-    color: #2b2d42;
+    color: #f9bc60;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .container {
+        width: 75vw;
+    }
+  }
